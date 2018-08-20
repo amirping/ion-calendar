@@ -1,0 +1,75 @@
+::-webkit-scrollbar {
+  display: none !important;
+}
+.calendar {
+  position: relative;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.calendar .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: wheat;
+}
+.calendar .top h4 {
+  margin: 0;
+  padding: 10px;
+}
+.calendar .top .year {
+  padding: 10px;
+}
+.calendar .monthes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5px;
+  cursor: pointer;
+  overflow-x: scroll;
+}
+.calendar .monthes::-webkit-scrollbar {
+  visibility: none;
+}
+.calendar .monthes div {
+  margin: auto;
+  color: gray;
+  min-width: 100px;
+  text-align: center;
+}
+.calendar .monthes div:active {
+  color: white;
+  font-size: 18px;
+  vertical-align: text-top;
+}
+.calendar .days {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+.calendar .days div {
+  margin: auto;
+  color: gray;
+  width: calc(100% / 7);
+  text-align: center;
+}
+.calendar .days div:active {
+  color: white;
+}
+.calendar .daysNbr {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 10px 0px 10px 0px;
+}
+.calendar .daysNbr div {
+  margin: auto;
+  color: gray;
+  width: calc(100% / 7);
+  text-align: center;
+}
